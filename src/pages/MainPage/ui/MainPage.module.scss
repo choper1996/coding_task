@@ -1,0 +1,51 @@
+.MainPage {
+    min-height: 100vh;
+    background-color: var(--inverted-bg-color);
+}
+
+.header {
+    padding: 0 0 20px 30px;
+    background-color: var(--bg-color);
+
+    @media screen and (max-width: 720px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h1 {
+        text-shadow: 0 4px 4px 0 #00000040;
+        font: var(--font-xl);
+
+        @media screen and (max-width: 720px) {
+            font: var(--font-l);
+        }
+    }
+
+    p {
+        font: var(--font-m);
+    }
+
+    .picture {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @media screen and (max-width: 720px) {
+            display: none;
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    background: var(--inverted-bg-color);
+    padding: 43px 30px;
+}
