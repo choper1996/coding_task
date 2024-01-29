@@ -1,0 +1,9 @@
+.CurrencyDisplay {
+    font: var(--font-xl);
+    color: var(--inverted-primary-color);
+    text-align: center;
+
+    @media screen and (max-width: 720px) {
+        font: var(--font-l);
+    }
+}
